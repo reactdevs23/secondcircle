@@ -5,7 +5,10 @@ const MainComponent = ({ title, feature1, feature2, feature3, fontFamily }) => {
   return (
     <section className={styles.mainWrapper} style={{ fontFamily: fontFamily }}>
       <div className={styles.wrapper}>
-        <div className={[styles.top, styles.circle].join(" ")}>
+        <div
+          className={[styles.top, styles.circle].join(" ")}
+          style={{ borderColor: feature1.color }}
+        >
           <div className={styles.textContainer}>
             <p
               className={styles.textTop}
@@ -17,7 +20,10 @@ const MainComponent = ({ title, feature1, feature2, feature3, fontFamily }) => {
             ></p>
           </div>
         </div>
-        <div className={[styles.left, styles.circle].join(" ")}>
+        <div
+          className={[styles.left, styles.circle].join(" ")}
+          style={{ borderColor: feature2.color }}
+        >
           <div className={styles.textContainer}>
             <p
               className={styles.textLeft}
@@ -25,7 +31,10 @@ const MainComponent = ({ title, feature1, feature2, feature3, fontFamily }) => {
             ></p>
           </div>
         </div>
-        <div className={[styles.right, styles.circle].join(" ")}>
+        <div
+          className={[styles.right, styles.circle].join(" ")}
+          style={{ borderColor: feature3.color }}
+        >
           <div className={styles.textContainer}>
             <p
               className={styles.textRight}

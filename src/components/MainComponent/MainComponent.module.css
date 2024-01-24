@@ -1,4 +1,5 @@
 .mainWrapper {
+  /* modify the height and width here on size variable */
   --size: 400px;
   max-width: var(--size);
   min-height: var(--size);
