@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import MainComponent from "./components/MainComponent/MainComponent";
+import styles from "./App.module.css";
 
+//  font-family: "Poppins", sans-serif;
+//  font-family: "Inter", sans-serif;
 function App() {
+  const userExperience = {
+    title: "Mental <br/> Health",
+    fontFamily: "'Inter', sans-serif",
+
+    feature1: {
+      text: "Respect <br/> Yourself",
+      color: "#EDC999",
+    },
+    feature2: {
+      text: "Manage <br/> Stress",
+      color: "#F3A851",
+    },
+    feature3: {
+      text: "Stay <br/> Positive",
+      color: "#CD906E",
+    },
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.wrapper}>
+      <MainComponent {...userExperience} />
     </div>
   );
 }

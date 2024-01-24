@@ -1,0 +1,88 @@
+.mainWrapper {
+  --size: 400px;
+  max-width: var(--size);
+  min-height: var(--size);
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper {
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48%;
+}
+.top {
+  position: relative;
+  z-index: 2;
+}
+.left {
+  position: absolute;
+  top: 46.4%;
+  right: 30%;
+
+  z-index: 2;
+}
+.right {
+  position: absolute;
+  top: 46.4%;
+  left: 30%;
+
+  width: 100%;
+  z-index: 2;
+}
+.circle {
+  min-width: var(--size);
+  max-width: var(--size);
+  height: var(--size);
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+.title {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: 600;
+  width: 28%;
+  text-align: center;
+}
+.textContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.textTop {
+  position: absolute;
+  font-size: 2em;
+  top: 24%;
+  left: 50%;
+  max-width: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.textLeft {
+  position: absolute;
+  font-size: 2em;
+  top: 54%;
+  left: 4%;
+  width: 56%;
+  text-align: center;
+}
+
+.textRight {
+  position: absolute;
+  font-size: 2em;
+  top: 54%;
+  right: 4%;
+  width: 56%;
+
+  text-align: center;
+}
