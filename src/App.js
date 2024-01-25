@@ -5,19 +5,19 @@ import styles from "./App.module.css";
 //  font-family: "Inter", sans-serif;
 function App() {
   const userExperience = {
-    title: "Mental <br/> Health",
+    title: "Mental Mental Mental Mental  ",
     fontFamily: "'Inter', sans-serif",
 
     feature1: {
-      text: "Respect <br/> Yourself",
+      text: "Respect ",
       color: "#EDC999",
     },
     feature2: {
-      text: "Manage <br/> Stress",
+      text: "Manage Stress Manage Stress",
       color: "#F3A851",
     },
     feature3: {
-      text: "Stay <br/> Positive",
+      text: "Stay Positive Stay ",
       color: "#CD906E",
     },
   };
